@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -110,7 +109,7 @@ body {
     background: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/images/pexels-quintin-gellar-313779.jpg");
+    ), url("../images/pexels-quintin-gellar-313779.jpg");
     background-position: center;
     background-size: cover;
     color: white;
@@ -365,25 +364,25 @@ body {
     background: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/images/01.jpg");
+    ), url("../images/01.jpg");
 }
 .img_two {
     background: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/images/02.jpg");
+    ), url("../images/02.jpg");
 }
 .img_tree {
     background: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/images/03.jpg");
+    ), url("../images/03.jpg");
 }
 .img_four {
     background: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("/images/04.jpg");
+    ), url("../images/04.jpg");
 }
 .image {
     background-position: center;
