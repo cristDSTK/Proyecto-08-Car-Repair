@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header__nums {
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.p-one {
+    font-size: 15px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        color: gainsboro;
+    }
+}
+.p-one i {
+    color: orange;
+    font-size: 22px;
+}
+.p-span {
+    width: 450px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: bold;
+}
+.p-span__help {
+    color: orange;
+    font-weight: normal;
+}
+.p-span__24 {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.header__nav {
+    background-color: orange;
+    color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header__nav--conten{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 35px;
+}
+.logo i {
+    color: gray;
+}
+.nav {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__links {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        color: rgb(140, 91, 5);
+    }
+}
+#menu {
+    display: none;
+}
+
+
+.header__title {
+    width: 100%;
+    height: 560px;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/images/pexels-quintin-gellar-313779.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title i {
+    font-size: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        color: orange;
+    }
+}
+.header__title--cont {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+}
+.header__title--cont h1 {
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 70px;
+    padding-bottom: 40px;
+}
+.header__title--cont button {
+    width: 220px;
+    height: 50px;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    border: 3px solid orange;
+    background-color: rgb(50, 50, 50, 0.0);
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        background-color: orange;
+    }
+}
+
+
+/*-------------------------------------------------------------*/
+
+.main {
+    width: 100%;
+}
+.boxing {
+    width: 1200px;
+    height: 300px;
+    margin: -100px auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+}
+.box{
+    background-color: orange;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        background-color: rgb(251, 144, 5);
+    }
+}
+.box i {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.box h2 {
+    font-weight: 500;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px #000;
+}
+.box span {
+    font-size: 25px;
+    margin-top: -10px;
+}
+.box p {
+    font-size: 14px;
+    padding: 0 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.welcome {
+    width: 1400px;
+    height: 400px;
+    margin: 150px auto 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.welcome__img {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+}
+.welcome__img img {
+    width: 100%;
+    height: 100%;
+
+}
+.welcome__text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome__text h3, .about__text h3 {
+    color: orange;
+    font-size: 33px;
+}
+.welcome__text span, .about__text span {
+    font-size: 30px;
+    color: grey;
+    margin-bottom: 20px;
+}
+.welcome__text p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+
+.services {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 200px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}
+.services h2 {
+    font-weight: 300;
+    font-size: 27px;
+    padding: 30px;
+}
+.services__content {
+    width: 1200px;
+    height: 280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.services__content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(109, 108, 108);
+    
+}
+.links {
+    transition: .4s;
+    text-align: start;
+    cursor: pointer;
+    &:hover {
+        color: orange;
+    }
+}
+.links i {
+    color: orange;
+    font-size: 18px;
+}
+.services button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: orange;
+    margin-top: 30px;
+    font-size: 18px;
+    transition: .4s;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(251, 144, 5);
+    }
+
+}
+
+
+
+.about {
+    width: 1400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: -150px auto 50px;
+}
+.about__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about__text p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 30px 20px;
+}
+.about__text button {
+    width: 200px;
+    height: 45px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    transition: .4s;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(251, 144, 5);
+    }
+
+}
+.about__img {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.about__img img {
+    width: 100%;
+}
+
+
+
+.image__cont {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.img_one {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/images/01.jpg");
+}
+.img_two {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/images/02.jpg");
+}
+.img_tree {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/images/03.jpg");
+}
+.img_four {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("/images/04.jpg");
+}
+.image {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        color: orange;
+    }
+}
+.image span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.litle {
+    font-size: 14px;
+    font-weight: 400;
+}
+.image h2 {
+    font-weight: 400;
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+}
