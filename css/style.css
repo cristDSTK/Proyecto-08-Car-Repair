@@ -5,19 +5,30 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+button {
+  cursor: pointer;
+  transition: .4s;
+  border: none;
+  text-transform: uppercase;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .4s;
+}
+:root {
+  --fondo: #235a94;
+  --texto: #253adc;
+  --hover: #101c7d;
+}
 .header {
   width: 100%;
-  height: 700px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: auto;
 }
-
 .header__nums {
   background-color: rgb(50, 50, 50);
   width: 100%;
-  height: 60px;
+  height: 40px;
   color: white;
 }
 .header__nums--div {
@@ -33,13 +44,14 @@ body {
 .p-one {
   font-size: 14px;
   cursor: pointer;
+  text-transform: uppercase;
   transition: 0.4s;
   &:hover {
     color: gainsboro;
   }
 }
 .p-one i {
-  color: orange;
+  color: var(--texto);
   font-size: 22px;
 }
 .p-span {
@@ -53,54 +65,46 @@ body {
   font-weight: bold;
 }
 .p-span__help {
-  color: orange;
+  color: var(--texto);
   font-weight: normal;
 }
 .p-span__24 {
-  background-color: orange;
+  background-color: var(--texto);
   padding: 5px;
   border-radius: 5px;
 }
 
 .header__nav {
-  background-color: orange;
-  color: white;
+  background-color: #235a94;
   width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 }
 .header__nav--conten {
+  margin: 0 auto;
   width: 1200px;
-  display: flex;
+  height: 80px;
   transition: 0.4s;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .logo {
-  font-size: 35px;
-}
-.logo i {
-  color: gray;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
 }
 .nav {
-  width: 550px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  column-gap: 50px;
 }
 .nav__links {
   color: white;
-  text-decoration: none;
-  font-size: 17px;
-  cursor: pointer;
-  transition: 0.4s;
+  font-size: 16px;
   &:hover {
-    color: rgb(140, 91, 5);
+    color: var(--texto);
   }
 }
 #menu {
@@ -109,59 +113,54 @@ body {
 
 .header__title {
   width: 100%;
-  height: 560px;
+  height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pexels-quintin-gellar-313779.jpg");
   background-position: center;
   background-size: cover;
   color: white;
-  display: flex;
-  flex-direction: row;
   transition: 0.4s;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__title i {
-  font-size: 40px;
-  width: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 300px;
-  cursor: pointer;
-  transition: 0.2s;
-  &:hover {
-    color: orange;
-  }
+  justify-content: center;
 }
 .header__title--div {
   width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 }
+.header__title i {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    color: var(--fondo);
+  }
+}
 .header__title--cont {
-  height: 300px;
   text-align: center;
 }
 .header__title--cont h1 {
   font-size: 70px;
   font-weight: 200;
-  line-height: 70px;
-  padding-bottom: 40px;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .header__title--cont button {
-  width: 220px;
+  width: 250px;
   height: 50px;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: white;
-  font-size: 18px;
-  border: 3px solid orange;
+  font-size: 17px;
+  border: 2px solid var(--texto);
   background-color: rgb(50, 50, 50, 0);
-  cursor: pointer;
-  transition: 0.4s;
   &:hover {
-    background-color: orange;
+    background-color: var(--fondo);
   }
 }
 
@@ -181,7 +180,7 @@ body {
   column-gap: 30px;
 }
 .box {
-  background-color: rgb(255, 180, 40);
+  background-color: var(--fondo);
   color: white;
   display: flex;
   flex-direction: column;
@@ -191,25 +190,28 @@ body {
   cursor: pointer;
   transition: 0.4s;
   &:hover {
-    background-color: rgb(251, 144, 5);
+    background-color: var(--hover);
   }
 }
 .box i {
   margin-bottom: 20px;
   font-size: 60px;
 }
-.box h2 {
+.box h3 {
   font-weight: 500;
-  font-size: 28px;
-  text-shadow: 2px 2px 2px #464444;
-}
-.box span {
+  text-transform: uppercase;
   font-size: 20px;
+  letter-spacing: 3px;
+}
+.box small {
+  font-size: 14px;
+  color: gainsboro;
   letter-spacing: 2px;
-  margin-top: -10px;
+  text-transform: uppercase;
 }
 .box p {
   font-size: 14px;
+  color: gainsboro;
   padding: 0 20px;
   margin-top: 10px;
   text-align: center;
@@ -220,55 +222,58 @@ body {
   height: 400px;
   margin: 200px auto 150px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
+  column-gap: 30px;
 }
 .welcome__img {
   width: 50%;
   height: 400px;
 }
-.welcome__img img {
+.welcome__img img,
+.about__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 0 10px #000;
 }
 .welcome__text {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  row-gap: 20px;
 }
-.welcome__text h3,
-.about__text h3 {
-  color: orange;
+.welcome__text h2,
+.about__text h2 {
+  color: var(--texto);
   font-size: 33px;
-}
-.welcome__text span,
-.about__text span {
-  font-size: 30px;
-  color: grey;
-  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .welcome__text p {
   font-size: 14px;
-  text-align: center;
-  padding: 10px 40px;
   line-height: 28px;
 }
 
 .services {
   width: 100%;
-  height: 550px;
+  height: 570px;
   margin-bottom: 200px;
-  background-color: rgb(218, 218, 218);
   text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../images/pexels-pixabay-162553.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 .services h2 {
   font-weight: 300;
   font-size: 27px;
-  padding: 30px;
+  padding: 50px 0 20px;
+  text-transform: uppercase;
 }
 .services__content {
   width: 1200px;
@@ -276,7 +281,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  column-gap: 20px;
 }
 .services__content1 {
   display: flex;
@@ -287,32 +292,27 @@ body {
   font-size: 15px;
   border-right: 2px solid rgb(195, 192, 192);
   font-weight: 500;
-  color: rgb(109, 108, 108);
 }
 .links {
-  transition: 0.4s;
   text-align: start;
   cursor: pointer;
   &:hover {
-    color: orange;
+    color: var(--fondo);
   }
 }
 .links i {
-  color: orange;
+  color: var(--fondo);
   font-size: 18px;
 }
 .services button {
   width: 250px;
   height: 50px;
-  border: none;
   color: white;
-  background-color: orange;
+  background-color: var(--fondo);
   margin-top: 30px;
   font-size: 18px;
-  transition: 0.4s;
-  cursor: pointer;
   &:hover {
-    background-color: rgb(251, 144, 5);
+    background-color: var(--hover);
   }
 }
 
@@ -320,52 +320,44 @@ body {
   width: 1200px;
   height: 400px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   margin: -100px auto 150px;
+  column-gap: 30px;
 }
 .about__text {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  row-gap: 20px;
 }
 .about__text p {
   font-size: 14px;
-  text-align: center;
-  padding: 0 30px 20px;
   line-height: 26px;
 }
-.about__text button {
+.about__text button,
+.welcome__text button {
   width: 200px;
   height: 45px;
-  background-color: orange;
+  background-color: var(--fondo);
   color: white;
   font-size: 18px;
   font-weight: 500;
-  border: none;
-  transition: 0.4s;
-  cursor: pointer;
   &:hover {
-    background-color: rgb(251, 144, 5);
+    background-color: var(--hover);
   }
 }
 .about__img {
   width: 50%;
   height: 100%;
-  padding: 20px;
-}
-.about__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .image__cont {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .img_one {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -379,10 +371,6 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/03.jpg");
 }
-.img_four {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/04.jpg");
-}
 .image {
   background-position: center;
   background-size: cover;
@@ -394,7 +382,7 @@ body {
   cursor: pointer;
   transition: 0.4s;
   &:hover {
-    color: orange;
+    color: var(--texto);
   }
 }
 .image span {
@@ -422,7 +410,7 @@ body {
 }
 .comment h2 {
   font-size: 30px;
-  color: orange;
+  color: var(--texto);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 30px;
@@ -436,8 +424,9 @@ body {
 }
 .comment__div--box {
   box-shadow: 0 0 10px #777777;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
+  height: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -467,6 +456,7 @@ body {
   font-size: 19px;
   font-weight: 600;
 }
+
 .comment__div--box i {
   position: absolute;
   left: 20px;
@@ -496,12 +486,16 @@ body {
 }
 .footer__div span {
   color: white;
-  height: 100px;
+}
+.footer__div span small {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .footer__div span h2 {
   font-size: 40px;
   font-weight: 300;
-  color: orange;
+  color: var(--texto);
 }
 .footer__div--ul {
   list-style: none;
@@ -513,9 +507,9 @@ body {
 }
 .footer__div--ul li a {
   color: white;
-  text-decoration: none;
-  transition: 0.4s;
   &:hover {
-    color: orange;
+    color: var(--hover);
   }
 }
+/*
+528
